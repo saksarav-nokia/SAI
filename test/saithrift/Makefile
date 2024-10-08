@@ -1,7 +1,7 @@
 CXX = $(CROSS_COMPILE)g++
 
 SAI_PREFIX = /usr
-SAI_HEADER_DIR ?= $(SAI_PREFIX)/include/sai
+SAI_HEADER_DIR ?= ../../inc
 SAI_HEADERS = $(SAI_HEADER_DIR)/sai*.h
 CFLAGS = -I$(SAI_HEADER_DIR) -I. -I../../experimental -std=c++11
 ifeq ($(DEBUG),1)
